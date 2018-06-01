@@ -1,0 +1,19 @@
+{
+
+  "description": "Disables the Facebook like button",
+  "manifest_version": 1,
+  "name": "No Likes For You",
+  "version": "1.0",
+  "homepage_url": "https://github.com/panzertime/no-likes-for-you",
+  "icons": {
+    "48": "icons/nolike-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["no-likes.js"]
+    }
+  ]
+
+}
